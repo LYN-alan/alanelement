@@ -6,13 +6,15 @@
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
+    "types": [
+      "vite/client", // if using vite
+      // ...
+      "jest"
+    ],
     "sourceMap": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "skipLibCheck": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
 }

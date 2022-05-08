@@ -1,4 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import ElContainer from './components/content'
+import ElButton from './components/button'
+
+const app = createApp(App)
+
+app.config.globalProperties.$AILEMENTE = { size:'large'}
+
+app.use(ElContainer).use(ElButton).mount('#app')
